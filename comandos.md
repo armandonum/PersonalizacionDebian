@@ -1,23 +1,8 @@
 # COMANDOS — Explicación detallada
 
-Este archivo explica **paso a paso** cada uno de los comandos y modificaciones que listaste, con su propósito, riesgos, buenas prácticas y ejemplos. Está pensado para sistemas basados en Debian (Debian/Ubuntu/derivados). Lee con atención las *precauciones* antes de aplicar cambios en sistemas de producción.
+Este archivo explica **paso a paso** cada uno de los comandos y modificaciones para debian , con su propósito, riesgos, buenas prácticas y ejemplos. Está pensado para sistemas basados en Debian (Debian/Ubuntu/derivados). Lee con atención las *precauciones* antes de aplicar cambios en sistemas de producción.
 
----
 
-## Índice
-1. `su`
-2. Añadir usuario a sudoers
-3. `nano /etc/sudoers` (editar sudoers)
-4. Reiniciar la máquina
-5. Modificar GRUB (`/etc/default/grub`)
-6. Desinstalación: `sudo apt autoremove`
-7. Repositorio backports
-8. Instalación de utilidades y paquetes (lista y explicación)
-9. Flatpak y Flathub
-10. Instalar kernel actualizado desde backports
-11. Comandos útiles y comprobaciones
-
----
 
 
 # 1) `su`
