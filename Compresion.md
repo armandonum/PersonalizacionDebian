@@ -10,7 +10,6 @@
 - `j` = usar **bzip2** (archivo `.tar.bz2`)
 - `J` = usar **xz** (archivo `.tar.xz`)
 - `C` = **change directory** antes de actuar (`-C /ruta`)
-- `-` o `-f -` = usar stdin/stdout (útil para pipes)
 
 ---
 
