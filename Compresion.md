@@ -122,11 +122,4 @@ Añadir a tar sin comprimir: `tar -rvf archivo.tar nuevo.txt `
 
 
 
-## 11) Usar tar con `ssh` / copiado por red (piping)
-```bash
-tar -czf - /ruta/dir | ssh usuario@remoto "cat > /ruta/remota/backup.tar.gz"
-ssh usuario@remoto "tar -czf - /ruta/dir" | tar -xzf - -C /destino/local
-```
-
----
 
