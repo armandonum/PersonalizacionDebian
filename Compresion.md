@@ -13,6 +13,16 @@
 
 ---
 
+## Paso previo) Clonar un repositorio
+```bash
+sudo apt install git
+```
+* Instalacion de paquete git
+```bash
+git clone https://github.com/armandonum/flisolUSFX2025.git
+```
+---
+
 ## 1) Crear un tar (sin compresión)
 ```bash
 tar -cvf backup.tar /ruta/a/dir /otra/ruta/archivo.txt
@@ -54,47 +64,15 @@ tar -xzvf backup.tar.gz
 tar -xzvf backup.tar.gz -C /tmp/restauracion
 ```
 * ` -C /tmp/restauracion` cambia a ese directorio antes de extraer.
----
-
-## 6) Extraer solo un archivo o carpeta del tar
-```bash
-tar -xzvf backup.tar.gz path/en/el/tar/archivo.conf
-
-```
 
 ---
 
-
-## 7) Excluir ficheros o carpetas
-* Excluir patrones al crear:
-```bash
-tar -czvf backup.tar.gz --exclude='*.tmp' --exclude='cache/*' /mi/proyecto
-
-```
-
-```bash
-tar -czvf backup.tar.gz --exclude-from=excluir.txt /mi/proyecto
-```
-* excluir.txt contiene un patrón por línea.
-
----
-
-## 8) Crear tar desde una lista de ficheros
+## 6) Crear tar desde una lista de ficheros
 
 * Si tienes filelist.txt con rutas (una por línea):
 ```bash
 tar -cvf backup.tar -T filelist.txt
 ``` 
-
----
-
-## 9) Dividir un tar grande (splitting) y volver a unir
-
-* Crear y dividir en trozos de 100 MB:
-
-```bash
-tar -czf - /mi/carpeta | split -b 100M - backup.tar.gz.part-
-```
 
 ---
 
