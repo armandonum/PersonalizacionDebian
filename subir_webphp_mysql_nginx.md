@@ -140,7 +140,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </html>
 ```
 
-Crea también `create.php`, `edit.php`, y `delete.php` (mismos que se encuentraen en el tutorial de apache.
+Crea también `create.php`, `edit.php`, y `delete.php` (mismos que se encuentraen en subir_webphp_aws_apache.md).
 
 ---
 
